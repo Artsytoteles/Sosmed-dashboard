@@ -19,6 +19,34 @@
             
             <!-- Header -->
              <header class="header">
+              <section class="p-4 bg-gray-100 rounded-lg shadow-md max-w-xl mx-auto my-4">
+                <form id="dataForm" class="flex flex-col gap-3">
+                  <h2 class="text-xl font-bold text-center">Tambah Akun Sosmed</h2>
+                  <input
+                    type="text"
+                    id="username"
+                    placeholder="Username"
+                    required
+                    class="px-4 py-2 border rounded-lg"
+                  />
+                  <input
+                    type="number"
+                    id="followers"
+                    placeholder="Jumlah Followers"
+                    required
+                    class="px-4 py-2 border rounded-lg"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg"
+                  >
+                    Simpan Data
+                  </button>
+                </form>
+              </section>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4" id="dataList"></div>
+
+              
                 <div class="menu-icon" onclick="openSidebar()">
                     <span class="material-icons-outlined">menu</span>
                 </div>
